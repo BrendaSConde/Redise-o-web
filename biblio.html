@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Programacion Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="redirect.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo-INSOMNIA.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="boton-menu"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="bio.html">BIOGRAFIA</a></li>
+                    <li><a href="">BIBLIOGRAFIA</a></li>
+                    <li><a href="home.html#novedades">NOVEDADES</a></li>
+                    <li><a href="reservas.html">RESERVAS</a></li>
+                    <li><a href="contactus.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="boton-menu"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>El universo de Stephen King</h1>
+            <h2>BIBLIOGRAFIA</h2>
+        </div>
+    </section>
+    <!---------bibliografia----------->
+    <section class="bibliografia">
+        <table class="biblio-table" border="1">
+           <thead>
+               <tr>
+                   <td colspan="4">Novelas, antologías y ensayos</td>
+                </tr>
+                <tr>
+                    <td>Año</td>
+                    <td>Titulo Original</td>
+                    <td>Titulo en Español</td>
+                    <td>Tipo</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1974</td>
+                    <td>Carrie</td>
+                    <td>Carrie</td>
+                    <td>Novela</td>
+                </tr>
+                <tr>
+                    <td>1975</td>
+                    <td>Salem's Lot</td>
+                    <td>La hora del vampiro</td>
+                    <td>Novela</td>
+                </tr>
+                <tr>
+                    <td>1977</td>
+                    <td>The Shinning</td>
+                    <td>El Resplandor</td>
+                    <td>Novela</td>
+                </tr>
+                <tr>
+                    <td>1977</td>
+                    <td>Rage</td>
+                    <td>Rabia</td>
+                    <td>Novela</td>
+                </tr>
+                <tr>
+                    <td>1978</td>
+                    <td>Night Shift</td>
+                    <td>El umbral de la noche</td>
+                    <td>Antologia</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">_</td>
+                </tr>
+            </tfoot>
+           
+        </table>
+
+        <!--<div class="table-box">
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>Novelas, antologías y ensayos</p>
+                </div>
+            </div>
+        </div>-->
+        <a href="home.html" class="hero-btn">VOLVER AL INICIO</a>
+    </section>
+    <!-----------contacto---------->
+    <section class="fondo-contacto">
+        <div class="contacto"> 
+         "<h1>¿Tenes alguna duda?</h1>
+         <a href="contactus.html" class="hero-btn">CONTACTANOS</a>
+        </div>
+    </section>
+    <!-----------footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Revista digital dedicada a la vida y obra del maestro del terror</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="madeby"><p>Made by Brenda Sofia Conde</p>
+        </div>
+    </section>
+    <!---------javascript toggle menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

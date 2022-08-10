@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Programacion Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="redirect.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo-INSOMNIA.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="boton-menu"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="bio.html">BIOGRAFIA</a></li>
+                    <li><a href="biblio.html">BIBLIOGRAFIA</a></li>
+                    <li><a href="home.html#novedades">NOVEDADES</a></li>
+                    <li><a href="">RESERVAS</a></li>
+                    <li><a href="contactus.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="boton-menu"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>El universo de Stephen King</h1>
+            <h2>VISITA NUESTRO RESTO TEMATICO</h2>
+        </div>
+    </section>
+    <!---------resto content----------->
+    <section class="resto-info">
+        <div class="resto-content">
+            <h2>Unete a nosotros en una noche repleta de horror</h2>
+            <h3>En nuestro bar podras adentrarte en las profundidades de la mente del Maestro del Terror de la mano de nuestro staff, acompañado de exclusivos cocktails de autor y los mejores platos.<br><br></h3>
+        </div>
+        <!--reservas-->
+        <section class="banner">
+            <h2>Hace tu reserva aqui</h2>
+            <div class="card-container">
+                <div class="card-image">
+                    <!--imagen-->
+                </div>
+                <div class="card-content">
+                    <h3>Reservacion</h3>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <div id="data">
+                        <form align="center" onsubmit="return AddData()">
+                            <div class="form-row">
+                                <input type="date" id="idate" placeholder="Elegir Fecha" required>
+                                <select name="hours" id="ihour" required>
+                                    <option value="hour-select">Elegir Hora</option>
+                                    <option value="12">12:00</option>
+                                    <option value="13">13:00</option>
+                                    <option value="14">14:00</option>
+                                    <option value="21">21:00</option>
+                                    <option value="22">22:00</option>
+                                    <option value="23">23:00</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" id="iname" placeholder="Nombre" required>
+                                <input type="text" id="isurname" placeholder="Apellido" required>
+                            </div>
+                            <div class="form-row">
+                                <input type="number" id="inum" placeholder="Personas" min="1" required>
+                                <button type="submit">Reservar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                
+            <!--tabla reservas-->
+            <div id="tab">
+                <table id="list" cellspacing="3" cellpadding="3" border="1">
+                    <thead>
+                        <tr>
+                            <td colspan="5">Reservas</td>
+                            </tr>
+                        <tr>
+                            <td>Fecha</td>
+                            <td>Hora</td>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>Personas</td>
+                            </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">_</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>>
+    </section>
+
+    <!-----------contacto---------->
+    <section class="fondo-contacto">
+        <div class="contacto"> 
+         "<h1>¿Tenes alguna duda?</h1>
+         <a href="contactus.html" class="hero-btn">CONTACTANOS</a>
+        </div>
+    </section>
+    <!-----------footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Revista digital dedicada a la vida y obra del maestro del terror</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="madeby"><p>Made by Brenda Sofia Conde</p>
+        </div>
+    </section>
+    <!---------javascript toggle menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!---------javascript reservations table----------->
+    <script>
+    function AddData() {
+        var rows = "";
+        var fecha = document.getElementById("idate").value;
+        var hora = document.getElementById("ihour").value;
+        var nombre = document.getElementById("iname").value;
+        var apellido = document.getElementById("isurname").value;
+        var personas = document.getElementById("inum").value;
+        rows += "<tr><td>" + fecha + "</td><td>" + hora + "</td><td>" + nombre + "</td><td> " + apellido + "</td><td>" + personas + "</td></tr> ";
+        $(rows).appendTo("#list tbody");
+        return false;
+    }
+</script>
+</body>
+</html>

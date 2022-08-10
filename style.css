@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;  
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.boton-menu{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .boton-menu{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    html, body {overflow-x: hidden;
+    }
+}
+/*---------novedades------*/
+.novedad{
+    background: #060a1b;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{ color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.novedad-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: box-shadow .3s;
+}
+h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.novedad-col:hover {
+    box-shadow: 0 0 11px #B10707;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*---------------contacto-------*/
+.fondo-contacto{
+    width: 100%;
+    background: #060a1b;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contacto{
+    margin: 50px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/The-Cell-.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contacto h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+/*---------------footer-------*/
+.footer{
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/stephenking.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    color: #fff;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    color: #777;
+}
+.icons {
+    color: #f1291a;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*------------pagina biografia---------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 50px;
+}
+.sub-header h2{
+    margin-top: 5px;
+}
+@media(max-width: 700px){
+    .text-box h2{
+        font-size: 15px;
+    }
+    .sub-header{
+        height: 25vh;
+        
+    }
+}
+.biografia{
+    background: #060a1b;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.biocontent{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*---------------pagina contacto--------*/
+.ubicacion{
+    width: 100%;
+    background: #060a1b;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ubicacion iframe{
+    width: 80%;
+    padding-left: 38px;
+    padding-right: 20px;
+}
+.contactanos{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+/*---------------pagina bibliografia--------*/
+.bibliografia{
+    background: #060a1b;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+.biblio-table{
+    width: 80%;
+    margin: 25px auto;
+    background-color: #060a1b;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #B10707;
+}
+thead{
+    background: #0b1333;
+}
+tfoot{
+    background: #0b1333;
+    color: #0b1333;
+}
+
+/*---------------pagina login--------*/
+
+.ingreso{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #0b1333;
+}
+.container{
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+.form__title{
+    color: #060a1b;
+}
+.form__title{
+    margin-bottom: 5px;
+    margin-top: 1rem;
+}
+.form__input-group{
+    margin-bottom: 1rem;
+}
+.form__input{
+    font: 500 1rem 55px;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    outline: none;
+    background: #eee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form__input:focus{
+    border-color: #0b1333;
+    background-color: #fff;
+}
+.form__text{
+    text-align: center;
+}
+.json{
+    font: 500 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #0b1333;
+}
+.json:active{
+    transform: scale(0.98);
+}
+.json:hover{
+    background-color: #11193d;
+}
+/*---------------pagina reservas--------*/
+.img-col1{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: box-shadow .3s;
+    background-image: url(images/horrorbar1.jpg);
+}
+.img-col2{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: box-shadow .3s;
+    background-image: url(images/horrorbar2.jpg);
+}
+.img-col3{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: box-shadow .3s;
+    background-image: url(images/horrordrink.jpg);
+}
+.resto-info{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/horrorbar1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 10px;
+    color: #fff;
+    margin-bottom: -1rem;
+}
+.resto-content{
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.banner{
+    min-height: 100vh;
+    background: url(images/bg.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(244, 244, 244);
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+    flex-direction: column;
+}
+.card-image{
+    background: url(images/horrordrink.jpg)center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: black;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+.banner form input[type=text], form input[type=date], form input[type=number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+/*-------tabla reservas--------*/
+table{
+    width: 80%;
+    margin: 25px auto;
+    background-color: #060a1b;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #B10707;
+}
+thead{
+    background: #0b1333;
+}
+tbody{
+    color:#f8f5f5;
+}
+tfoot{
+    background: #0b1333;
+    color: #0b1333;
+}
+td{
+    padding: 5px 5px 5px 5px;
+    height: fit-content;
+}
+@media(max-width: 700px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}

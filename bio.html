@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Programacion Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="redirect.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo-INSOMNIA.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="boton-menu"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="">BIOGRAFIA</a></li>
+                    <li><a href="biblio.html">BIBLIOGRAFIA</a></li>
+                    <li><a href="home.html#novedades">NOVEDADES</a></li>
+                    <li><a href="reservas.html">RESERVAS</a></li>
+                    <li><a href="contactus.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="boton-menu"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>El universo de Stephen King</h1>
+            <h2>BIOGRAFIA</h2>
+        </div>
+    </section>
+    <!---------bio content----------->
+    <section class="biografia">
+        <div class="biocontent">
+            <p>Stephen Edwin King nació en Portland, Maine en 1947. Parte de su infancia tuvo lugar en Fort Wayne, Indiana, donde la familia de su padre estaba en ese momento, y en Stratford, Connecticut.</p>
+            <p>Cuando tenía once años, su madre lo llevó a Maine. Stephen asistió a la escuela secundaria en Durham y luego a la Escuela Secundaria de Lisbon Falls, graduándose en 1966. Desde su segundo año en la Universidad de Maine en Orono, escribió una columna semanal para el periódico escolar The Maine Campus.</p>
+            <p>También fue activo en la política estudiantil, sirviendo como miembro del Senado Estudiantil. Llegó a apoyar el movimiento contra la guerra en el campus de Orono, desde la posición que la guerra en Vietnam era inconstitucional. Se graduó de la Universidad de Maine en Orono en 1970, graduándose en Inglés y calificado para enseñar en el nivel de escuela secundaria.</p>
+            <p>Tabitha Spruce y él se casaron en enero de 1971. Conoció a Tabitha en la Biblioteca Fogler en la Universidad de Maine en Orono, donde ambos trabajaron como estudiantes. Juntos tienen tres hijos: Naomi Rachel, Joe Hill y Owen Phillip, y cuatro nietos.</p>
+            <p>Stephen hizo su primera venta profesional de un cuento («The Glass Floor») a Startling Mystery Stories en 1967. Durante los primeros años de su matrimonio, siguió vendiendo relatos a revistas masculinas. Muchos de estos fueron más tarde reunidos en la colección Night Shift, o aparecieron en otras antologías.</p>
+            <p>En la primavera de 1973, Doubleday & Co. aceptó la publicación de la novela Carrie. Stephen aprendió de su nuevo editor en Doubleday, Bill Thompson, que una gran venta de bolsillo le proporcionaría los medios para escribir a tiempo completo.</p>
+            <p>Carrie fue publicado en la primavera de 1974. Ese mismo otoño, los King cambiaron Maine por Boulder, Colorado. Vivieron allí durante un poco menos de un año, durante el cual Stephen escribió The Shining, ambientado en Colorado. Volviendo a Maine en el verano de 1975, los King compraron una casa en la Región de los Lagos del oeste de Maine. En esa casa, Stephen terminó de escribir The Stand, gran parte de la cual también está ambientada en Boulder. The Dead Zone también fue escrita en Bridgton.</p>
+            <p>Stephen ha puesto algo de su experiencia dramática en la universidad para hacer cameos en varias de las adaptaciones a películas de sus trabajos, así como un pequeño rol en una película de George Romero, Knightriders. Joe Hill King también apareció en Creepshow, que fue estrenada en 1982. Stephen hizo su debut como director, además de escribir el guión, en la película Maximum Overdrive (una adaptación de su cuento «Trucks») en 1985.</p>
+            <p>Stephen fue galardonado en 2003 con la Medalla por una Contribución Distinguida a la Literatura Americana, de Fundación Nacional del Libro, y la Medalla Nacional de las Artes 2014.<br><br></p>
+        </div>
+        <a href="home.html" class="hero-btn">VOLVER AL INICIO</a>
+    </section>
+    <!-----------contacto---------->
+    <section class="fondo-contacto">
+        <div class="contacto"> 
+         "<h1>¿Tenes alguna duda?</h1>
+         <a href="contactus.html" class="hero-btn">CONTACTANOS</a>
+        </div>
+    </section>
+    <!-----------footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Revista digital dedicada a la vida y obra del maestro del terror</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="madeby"><p>Made by Brenda Sofia Conde</p>
+        </div>
+    </section>
+    <!---------javascript toggle menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Programacion Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="redirect.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+            <a href="home.html"><img src="images/Logo-INSOMNIA.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="boton-menu"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="">INICIO</a></li>
+                    <li><a href="bio.html">BIOGRAFIA</a></li>
+                    <li><a href="biblio.html">BIBLIOGRAFIA</a></li>
+                    <li><a href="#novedades">NOVEDADES</a></li>
+                    <li><a href="reservas.html">RESERVAS</a></li>
+                    <li><a href="contactus.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="boton-menu"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>El universo de Stephen King</h1>
+            <p>
+                Revista digital dedicada a la vida y obra del maestro del terror
+            </p>
+            <a href="#about" class="hero-btn">Conocenos!</a>
+        </div>
+    </section>
+    <main>
+        <!---------novedades----------->
+        <section class="novedad">
+           <a id="novedades"></a>
+           <h1>Ultimas Noticias</h1>
+           <p>Todas las novedades del Rey del Horror</p>
+           <div class="row">
+              <div class="novedad-col">
+                 <h3>INSOMNIA Nº 289</h3>
+                 <p><b>REVISTA INSOMNIA Nº289</b><br>Mayo 2022<br>70 páginas<br><b>Contenido:</b><br><b>Cómics:</b> Sleeping Beauties <br><b>Informe:</b> IT, el asesino serial que inspiró a Stephen King<br><b>Opinión:</b> Una novela fuera de género<br><b>Entrevista:</b> Joe Hill, curiosidades de un autor.</p>
+                </div>
+               <div class="novedad-col">
+                 <h3>LOCKE & KEY: La edad dorada</h3>
+                 <p>Panini publicará en España Locke & Key: La Edad Dorada, tomo que recopila algunas de la historias más recientes de la saga de cómics de Joe Hill y Gabriel Rodriguez.</p>
+                </div>
+               <div class="novedad-col">
+                 <h3>¿Tom Gordon en producción?</h3>
+                 <p>Hace algunos meses se anunció que la demorada adaptación de The Girl Who Loved Tom Gordon (La chica que amaba a Tom Gordon) ya tenía directora (Lynne Ramsay) y productora (Christine Romero), y que su producción comenzaría en 2021, y sin embargo no tuvimos novedades hasta hoy.</p>
+                </div>
+           </div>
+           <a href="" class="hero-btn">VOLVER AL INICIO</a>
+        </section>
+        <!-----------contacto---------->
+        <section class="fondo-contacto">
+           <div class="contacto"> 
+             "<h1>¿Tenes alguna duda?</h1>
+             <a href="contactus.html" class="hero-btn">CONTACTANOS</a>
+           </div>
+        </section>
+    </main>
+    <!-----------footer---------->
+    <section class="footer">
+        <a id="about"></a>
+        <h4>About Us</h4>
+        <p>Revista digital dedicada a la vida y obra del maestro del terror</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="madeby"><p>Made by Brenda Sofia Conde</p>
+        </div>
+    </section>
+    <!---------javascript toggle menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

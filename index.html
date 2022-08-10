@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Programacion Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo-INSOMNIA.png"></a>
+        </nav>
+        <div class="text-box">
+            <h1>El universo de Stephen King</h1>
+        </div>
+    </section>
+    <section class="ingreso">
+        <div class="container">
+            <form class="form" id="login">
+                <h1 class="form__title">Bienvenido</h1>
+                <div class="form__input-group">
+                    <input type="text" class="form__input" id="user" autofocus placeholder="Username" required>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" id="pass" autofocus placeholder="Password" required>
+                </div>
+                <button class="json" type="button"  onclick="fetchInfo()" >Ingresar</button>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <a id="about"></a>
+        <h4>About Us</h4>
+        <p>Web dedicada a la vida y obra del maestro del terror</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="madeby"><p>Made by Brenda Sofia Conde</p>
+        </div>
+    </section>
+
+</body>
+</html>

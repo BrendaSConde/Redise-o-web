@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Programacion Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="redirect.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo-INSOMNIA.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="boton-menu"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="bio.html">BIOGRAFIA</a></li>
+                    <li><a href="biblio.html">BIBLIOGRAFIA</a></li>
+                    <li><a href="home.html#novedades">NOVEDADES</a></li>
+                    <li><a href="reservas.html">RESERVAS</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="boton-menu"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>El universo de Stephen King</h1>
+            <h2>CONTACTANOS</h2>
+        </div>
+    </section>
+    <!-----------contacto---------->
+    <article>
+        <section class="ubicacion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8471287929865!2d-74.15036138536698!3d40.72138167933093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25395288405fb%3A0x47fbd32226796277!2s215%20Wilson%20Ave%2C%20Newark%2C%20NJ%2007105%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1652137019993!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contactanos">
+        <div class="row">
+            <div class="contactanos-col">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>
+                        <h5>123 Road, Some Building</h5>
+                        <p>NYC, Nueva York, EE. UU.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contactanos-col">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>555-000-1323</h5>
+                        <p>Lu a Vi de 09:00hs a 18:00hs</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contactanos-col">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>info@insomniaking.com</h5>
+                        <p>Envianos tus sugerencias/dudas</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </article>
+    <!-----------footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Revista digital dedicada a la vida y obra del maestro del terror</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="madeby"><p>Made by Brenda Sofia Conde</p>
+        </div>
+    </section>
+    <!---------javascript toggle menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
